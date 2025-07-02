@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>example</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 60px;
+
+        /* background: #000; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 5px;
+         margin-bottom: 20px;
+      }
+      .a {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+       
+      }
+      #container {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        /* border: 1px solid black; */
+        padding: 10px 150px;
+        display: flex;
+        gap: 100px;
+      }
+      #div2 {
+        width: 100%;
+        height: 250px;
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .subDiv1 {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        /* gap: 10px; */
+
+        animation-name: subDiv1;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+      @keyframes subDiv1 {
+        from {
+          height: 200px;
+          width: 200px;
+          background-color: rgb(255, 255, 255);
+          margin-top: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        to {
+          height: 200px;
+          width: 200px;
+          background-color: rgb(246, 245, 245);
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+      .subDiv2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        animation-name: subDiv2;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+      }
+
+      @keyframes subDiv2 {
+        from {
+          height: 200px;
+          width: 200px;
+          background-color: rgb(255, 255, 255);
+          margin-top: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        to {
+          height: 200px;
+          width: 200px;
+          background-color: rgb(246, 245, 245);
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+      .subDiv3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        animation-name: subDiv3;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+      }
+      @keyframes subDiv3 {
+        from {
+          height: 200px;
+          width: 200px;
+          background-color: rgb(255, 255, 255);
+          margin-top: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        to {
+          height: 200px;
+          width: 200px;
+          background-color: rgb(246, 245, 245);
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 10px;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+
+      #circle {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        border-radius: 100px;
+        margin-left: 280px;
+        margin-top: 50px;
+      }
+      #circle:hover {
+        animation-name: animation;
+        animation-timing-function: steps(5);
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+      @keyframes animation {
+        0% {
+          width: 200px;
+          height: 200px;
+          background-color: #000;
+          border-radius: 100px;
+          margin-left: 280px;
+          margin-top: 50px;
+        }
+        20% {
+          height: 300px;
+          width: 300px;
+          border-radius: 60px;
+          background-color: #000;
+          margin-left: 224px;
+          margin-top: 50px;
+        }
+        40% {
+          height: 400px;
+          width: 400px;
+          border-radius: 50px;
+          background-color: #000;
+          margin-left: 168px;
+          margin-top: 50px;
+        }
+
+        60% {
+          height: 500px;
+          width: 500px;
+          border-radius: 40px;
+          background-color: #000;
+          margin-left: 112px;
+          margin-top: 50px;
+        }
+
+        80% {
+          height: 600px;
+          width: 600px;
+          border-radius: 30px;
+          background-color: #000;
+          margin-left: 56px;
+          margin-top: 50px;
+        }
+        100% {
+          height: 700px;
+          width: 700px;
+          border-radius: 25px;
+          background-color: #000;
+          margin-left: 30px;
+          margin-top: 50px;
+        }
+      }
+      .box {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        height: 100%;
+        align-items: center;
+      }
+
+      .boxes {
+        width: 180px;
+        height: 80px;
+        padding: 10px;
+        margin: 0 5px; /* Spacing between the boxes */
+        flex-shrink: 0; /* Prevents boxes from shrinking */
+        /* background-color: steelblue; */
+        border: 1px solid;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .innerBox1 {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: antiquewhite;
+      }
+      .innerBox2 {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: whitesmoke;
+      }
+      .innerBox3 {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: rgb(247, 220, 224);
+      }
+      .icons {
+        margin-left: 22px;
+        margin-top: 30px;
+      }
+      #div3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+      }
+      .travel {
+        width: 120px;
+        height: 120px;
+        background-color: whitesmoke;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      #div4 {
+        background-color: #3d2261;
+        width: 600px;
+        height: 280px;
+        margin: 20px 80px;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+      }
+      .flagDiv {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .flag1 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 80px;
+
+        animation-name: flag1;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+      @keyframes flag1 {
+        from {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 80px;
+        }
+        to {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 10px;
+        }
+      }
+      .flag2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 80px;
+
+        animation-name: flag2;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+      }
+      @keyframes flag2 {
+        from {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 80px;
+        }
+        to {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 20px;
+        }
+      }
+      .flag3 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 80px;
+
+        animation-name: flag3;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+      }
+      @keyframes flag3 {
+        from {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 80px;
+        }
+        to {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 20px;
+        }
+      }
+      .flag4 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 80px;
+
+        animation-name: flag4;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 4s;
+      }
+      @keyframes flag4 {
+        from {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 80px;
+        }
+        to {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 20px;
+        }
+      }
+      .flag5 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 80px;
+
+        animation-name: flag5;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+      }
+      @keyframes flag5 {
+        from {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 80px;
+        }
+        to {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 20px;
+        }
+      }
+      .flag6 {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        margin-top: 80px;
+
+        animation-name: flag6;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 6s;
+      }
+      @keyframes flag6 {
+        from {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          margin-top: 80px;
+        }
+        to {
+          width: 80px;
+          height: 80px;
+          border-radius: 40px;
+          /* margin-top: 20px; */
+          transform: translateY(-30px);
+        }
+      }
+      #div5 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px 30px 10px 30px;
+      }
+      #videosDiv {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        /* border: 1px solid black; */
+        /* padding: 10px; */
+        display: flex;
+        /* gap: 10px; */
+      }
+      .videos {
+        width: 400px;
+        height: 300px;
+        border-radius: 200px;
+        background: #000;
+        object-fit: cover;
+        margin: 10px;
+        opacity: 0.5;
+      }
+      .videos:hover {
+        width: 400px;
+        height: 300px;
+        border-radius: 100px;
+        background: #000;
+        object-fit: cover;
+        margin: 10px;
+        opacity: 1.0;
+      }
+      #div6 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+      }
+      .savings {
+        background-color: whitesmoke;
+        border: 1px solid #ccc;
+        width: 500px;
+        height: 110px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        margin: 2px 10px;
+      }
+      .savingBox {
+        width: 350px;
+        height: 110px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4a3a5d;
+        font-size: 20px;
+
+        /* animation-name: savingBox;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 1s; */
+      }
+      .savingBox:hover {
+        animation-name: savingBox;
+        animation-timing-function: ease;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+      @keyframes savingBox {
+        from {
+          width: 350px;
+          height: 120px;
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 100px;
+          /* margin-left: 30px; */
+        }
+        to {
+          width: 350px;
+          height: 120px;
+          background: #fff;
+          border: 1px solid #ccc;
+          border-radius: 100px;
+          transform: translateX(-30px);
+        }
+      }
+
+      /* --- Footer General Styles --- */
+      .site-footer {
+        background-color: #f9f9f9; /* A very light grey, close to the image */
+        padding: 30px 0;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .footer-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+     
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        margin-left: 100px;
+      }
+
+    
+      .footer-column .footer-logo {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .footer-column .footer-logo img {
+        width: 130px;
+      }
+
+      .footer-heading {
+        font-size: 14px; 
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+      }
+
+      .footer-column ul {
+        list-style: none;
+        margin-bottom: 5px; 
+      }
+
+      .footer-column li {
+        margin-bottom: 2px;
+      }
+
+      .footer-column a {
+        text-decoration: none;
+        color: #5f6368; 
+        font-size: 10px; 
+        transition: color 0.2s ease;
+      }
+
+      .footer-column a:hover {
+        color: #6739b7; 
+        text-decoration: underline;
+      }
+
+  
+      .external-link-icon {
+        vertical-align: middle;
+        margin-left: 4px;
+      }
+
+    
+      .lending-heading {
+        margin-top: 10px;
+      }
+
+      .see-all-apps {
+        margin-top: 10px;
+      }
+
+      .download-button {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 2px solid #000;
+        border-radius: 25px;
+        color: #000 !important; 
+        background-color: #fff;
+        font-weight: 700;
+        text-align: center;
+        transition: background-color 0.2s, color 0.2s;
+      }
+
+      .download-button:hover {
+        background-color: #000;
+        color: #fff !important; 
+        text-decoration: none;
+      }
+
+      
+      .footer-bottom {
+        border-top: 1px solid #e0e0e0;
+        margin-top: 40px;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 15px;
+
+      }
+
+      .social-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        border-radius: 50%;
+        transition: transform 0.2s ease;
+      }
+
+      .social-icons a:hover {
+        transform: translateY(-3px);
+      }
+
+      .social-icons svg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+      }
+
+      .copyright-text {
+        font-size: 0.8rem; 
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="phonePe.png"
+          alt=""
+          width="150px"
+          height="100px"
+         style="margin-top: -18px;"
+        />
+      </div>
+      <a href="" class="a">Our Solutions </a>
+      <a href="" class="a">Press</a>
+      <a href="" class="a">Careers</a>
+      <a href="" class="a">About Us</a>
+      <a href="" class="a">Blog</a>
+      <a href="" class="a">Contact Us</a>
+      <a href="" class="a">Trust & Safety</a>
+    </header>
+    <div id="container">
+      <img
+        src="https://assets.entrepreneur.com/content/3x2/2000/1675756974-Untitleddesign-2023-02-07T132945518.jpg"
+        alt=""
+        width="1500px"
+        height="600px"
+
+      />
+      <img
+        src="https://www.equentis.com/blog/wp-content/uploads/2023/06/Phonepe-share-price-1200x675.jpg"
+        alt=""
+        width="1500px"
+        height="600px"
+      />
+      <img
+        src="https://media.licdn.com/dms/image/v2/D5622AQE-415odZ69sg/feedshare-shrink_800/feedshare-shrink_800/0/1688389780694?e=2147483647&v=beta&t=xO6uekMSw4y7MvNq6Zadj8kIWPbKGRQpRPdQJ6XjrQ0"
+        alt=""
+        width="1500px"
+        height="600px"
+      />
+      <img
+        src="https://images.yourstory.com/cs/2/21ccd920843c11ec88170b5512a0f9d5/SmartSpeaker2-1747045345004.png?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75"
+        alt=""
+         width="1500px"
+        height="600px"
+      />
+      <img
+        src="https://bsmedia.business-standard.com/_media/bs/img/article/2025-01/29/full/1738153498-0617.jpg"
+        alt=""
+         width="1500px"
+        height="600px"
+      />
+      <img
+        src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIBVPXmJ3yDkCRYG_8y5hnt8rixJluACfAg&s"
+        alt=""
+        width="1500px"
+        height="600px"
+      />
+    </div>
+    <div id="div2">
+      <div class="subDiv1">
+        <img src="investment.png" alt="" width="100px" height="100px" />
+        <h2 style="color: #4a3a5d; margin-bottom: 5px">Investment</h2>
+        <p style="font-size: 10px; color: rgb(77, 70, 70)">
+          Build , manage & grow your wealth
+        </p>
+      </div>
+      <div class="subDiv2">
+        <img src="insurance.png" alt="" width="100px" height="100px" />
+        <h2 style="color: #4a3a5d; margin-bottom: 5px">Insurance</h2>
+        <p style="font-size: 10px; color: rgb(77, 70, 70)">
+          Proctect,plan & secure youor future
+        </p>
+      </div>
+      <div class="subDiv3">
+        <img src="lending.png" alt="" width="120px" height="100px" />
+        <h2 style="color: #4a3a5d; margin-bottom: 5px">Lending</h2>
+        <p style="font-size: 10px; color: rgb(77, 70, 70)">
+          Access quick, transparent & secure loan
+        </p>
+      </div>
+    </div>
+    <div id="circle"></div>
+    <div
+      style="
+        text-align: center;
+        margin: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #4a3a5d;
+      "
+    >
+      Convenience<br />
+      at your fingertips
+    </div>
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left">
+        <div class="box">
+          <div class="boxes">
+            <div class="innerBox2">
+              <i
+                class="fa-solid fa-mobile-screen-button fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Mobile Recharge</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox1">
+              <i
+                class="fa-solid fa-car fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">FASTag Recharge</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox3">
+              <i
+                class="fa-solid fa-mobile-screen-button fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">DTH</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox2">
+              <i
+                class="fa-solid fa-tv fa-lg"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Cable Television</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox1">
+              <i
+                class="fa-solid fa-mobile-screen-button fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Mobile Recharge</h6>
+          </div>
+        </div>
+      </marquee>
+      <marquee behavior="scroll" direction="right">
+        <div class="box">
+          <div class="boxes">
+            <div class="innerBox3">
+              <i
+                class="fa-solid fa-droplet fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Water</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox2">
+              <i
+                class="fa-solid fa-money-check fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Rent Payment</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox1">
+              <i
+                class="fa-solid fa-bolt fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Electricity</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox2">
+              <i
+                class="fa-solid fa-mobile-screen-button fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Landline</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox3">
+              <i
+                class="fa-solid fa-gas-pump fa-xl"
+                style="margin-left: 22px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Piped Gas</h6>
+          </div>
+        </div>
+      </marquee>
+      <marquee behavior="scroll" direction="left">
+        <div class="box">
+          <div class="boxes">
+            <div class="innerBox3">
+              <i
+                class="fa-solid fa-coins fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Loan repayment</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox2">
+              <i
+                class="fa-solid fa-money-bill-transfer fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Recurrung Deposit</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox1">
+              <i
+                class="fa-solid fa-house-crack fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Insurance</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox2">
+              <i
+                class="fa-solid fa-house-user fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">Municipal tax</h6>
+          </div>
+          <div class="boxes">
+            <div class="innerBox3">
+              <i
+                class="fa-solid fa-server fa-xl"
+                style="margin-left: 18px; margin-top: 30px"
+              ></i>
+            </div>
+            <h6 style="font-weight: 200">services</h6>
+          </div>
+        </div>
+      </marquee>
+    </div>
+    <div id="div3">
+      <h2 style="color: #4a3a5d">Travel, stays & commute</h2>
+      <p style="font-size: 12px">
+        Recharge FASTag, book flights, hotels, cabs, and metro tickets, get
+        roadside<br />
+        assistance and more seamlessly.
+      </p>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          gap: 10px;
+          margin: 30px 0px;
+        "
+      >
+        <div class="travel">
+          <h3 style="margin-bottom: 35px; font-weight: 200; color: #4a3a5d">
+            Flights
+          </h3>
+          <i class="fa-solid fa-plane fa-2xl"></i>
+        </div>
+        <div class="travel">
+          <h3 style="margin-bottom: 35px; font-weight: 200; color: #4a3a5d">
+            Bus
+          </h3>
+          <i class="fa-solid fa-bus fa-2xl"></i>
+        </div>
+        <div class="travel">
+          <h3 style="margin-bottom: 35px; font-weight: 200; color: #4a3a5d">
+            Train
+          </h3>
+          <i class="fa-solid fa-train fa-2xl"></i>
+        </div>
+        <div class="travel">
+          <h3 style="margin-bottom: 35px; font-weight: 200; color: #4a3a5d">
+            Hotels
+          </h3>
+          <i class="fa-solid fa-hotel fa-2xl"></i>
+        </div>
+      </div>
+      <button
+        style="
+          color: white;
+          background-color: #5e249e;
+          padding: 5px 20px;
+          border-radius: 20px;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          border: none;
+        "
+      >
+        Explore Now<i
+          class="fa-solid fa-arrow-right fa-lg"
+          style="color: #ffffff"
+        ></i>
+      </button>
+    </div>
+    <div id="div4">
+      <h1>PhonePe International</h1>
+      <p style="font-size: 12px; margin: 10px">
+        Make UPI payments internationally at select merchants. Now available
+        in<br />
+        Singapore, UAE, Nepal, Sri Lanka, Bhutan, and Mauritius.
+      </p>
+      <div class="flagDiv">
+        <img
+          src="https://cdn.britannica.com/36/4036-050-37052A78/Flag-Singapore.jpg"
+          alt=""
+          class="flag1"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/1200px-Flag_of_the_United_Arab_Emirates.svg.png"
+          alt=""
+          class="flag2"
+        />
+        <img
+          src="https://i.pinimg.com/736x/03/f9/b1/03f9b188268a5a5f1bca18615b62c5b8.jpg"
+          alt=""
+          class="flag3"
+          style="object-fit: cover"
+        />
+        <img
+          src="https://as1.ftcdn.net/jpg/01/99/94/06/1000_F_199940626_xXJ5fDluWLyKLoMaHKZb42HKhNgvocMc.jpg"
+          alt=""
+          class="flag4"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Flag_of_Bhutan.svg/1280px-Flag_of_Bhutan.svg.png"
+          alt=""
+          class="flag5"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Mauritius.svg/330px-Flag_of_Mauritius.svg.png"
+          alt=""
+          class="flag6"
+        />
+      </div>
+    </div>
+    <div id="div5">
+      <h2 style="color: #4a3a5d">
+        Payments on PhonePe are safe,<br />
+        reliable, and quick
+      </h2>
+      <p
+        style="
+          font-size: 12px;
+          text-align: center;
+          line-height: 18px;
+          margin: 10px 0px;
+        "
+      >
+        One in three Indians uses the PhonePe app to send money, recharge, pay
+        bills,<br />
+        and more — all in just a few clicks. PhonePe also offers a wide range of
+        financial<br />
+        services, including Insurance, Investments, and Lending, giving every
+        Indian an<br />equal opportunity to unlock the flow of money and access
+        to services.
+      </p>
+    </div>
+    <div id="videosDiv">
+      <video
+        class="videos"
+        controls
+        src="3571264-uhd_3840_2160_30fps.mp4"
+      ></video>
+      <video
+        class="videos"
+        controls
+        src="3571264-uhd_3840_2160_30fps.mp4"
+      ></video>
+      <video
+        class="videos"
+        controls
+        src="3571264-uhd_3840_2160_30fps.mp4"
+      ></video>
+      <video
+        class="videos"
+        controls
+        src="3571264-uhd_3840_2160_30fps.mp4"
+      ></video>
+    </div>
+    <div id="div6">
+      <h2 style="color: #4a3a5d">
+        Smart savings<br />
+        start here
+      </h2>
+      <div class="savings">
+        <div class="savingBox">Gold</div>
+        <p style="font-size: 12px; text-align: left">
+          Buy 24K pure gold securely, starting from just ₹1. Manage, sell, or
+          gift gold digitally anytime.
+        </p>
+      </div>
+      <div class="savings">
+        <div class="savingBox">Monthly Gold SIP</div>
+        <p style="font-size: 12px; text-align: left">
+          Invest in 24K pure gold every month, starting from just ₹100. Set up a
+          Gold SIP and grow your savings effortlessly.
+        </p>
+      </div>
+      <div class="savings">
+        <div class="savingBox">Recurring Deposit</div>
+        <p style="font-size: 12px; text-align: left">
+          Save smartly with a Recurring Deposit. Start small, earn interest and
+          build a secure future with easy monthly contributions.
+        </p>
+      </div>
+      <div class="savings">
+        <div class="savingBox">NPS Contribution</div>
+        <p style="font-size: 12px; text-align: left">
+          Secure your retirement with NPS. Contribute flexibly, enjoy tax
+          benefits, and grow your wealth for a worry free future.
+        </p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Column 1: Logo & Business Solutions -->
+         
+          <div class="footer-column">
+            <h3 class="footer-heading">Business Solutions</h3>
+            <ul>
+              <li><a href="#">Payment Gateway</a></li>
+              <li><a href="#">E-commerce PG</a></li>
+              <li><a href="#">UPI Payment Gateway</a></li>
+              <li><a href="#">Guardian by PhonePe</a></li>
+              <li><a href="#">Express Checkout</a></li>
+              <li><a href="#">Offline Merchant</a></li>
+              <li><a href="#">Advertise on PhonePe</a></li>
+              <li><a href="#">SmartSpeaker</a></li>
+              <li><a href="#">POS Machine</a></li>
+              <li><a href="#">Payment Links</a></li>
+              <li><a href="#">Travel and Commute</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Insurance -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Insurance</h3>
+            <ul>
+              <li><a href="#">Motor Insurance</a></li>
+              <li><a href="#">Bike Insurance</a></li>
+              <li><a href="#">Car Insurance</a></li>
+              <li><a href="#">Health Insurance</a></li>
+              <li><a href="#">Arogya Sanjeevani Policy</a></li>
+              <li><a href="#">Life Insurance</a></li>
+              <li><a href="#">Term Life Insurance</a></li>
+              <li><a href="#">Personal Accident Insurance</a></li>
+              <li><a href="#">Travel Insurance</a></li>
+              <li><a href="#">International Travel Insurance</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Investments & Lending -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Investments</h3>
+            <ul>
+              <li><a href="#">24K Gold</a></li>
+              <li><a href="#">Liquid Funds</a></li>
+              <li><a href="#">Tax Saving Funds</a></li>
+              <li><a href="#">Equity Funds</a></li>
+              <li><a href="#">Debt Funds</a></li>
+              <li><a href="#">Hybrid Funds</a></li>
+            </ul>
+            <h3 class="footer-heading lending-heading">Lending</h3>
+            <ul>
+              <li><a href="#">Consumer Lending</a></li>
+              <li><a href="#">Merchant Lending</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: General -->
+          <div class="footer-column">
+            <h3 class="footer-heading">General</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Ethics</a></li>
+              <li><a href="#">Report Vulnerability</a></li>
+              <li><a href="#">Merchant Partners</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Tech Blog</a></li>
+              <li><a href="#">PhonePe Pulse</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 5: Legal -->
+          <div class="footer-column">
+            <h3 class="footer-heading">Legal</h3>
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Grievance Policy</a></li>
+              <li><a href="#">How to Pay</a></li>
+              <li><a href="#">E-Waste Policy</a></li>
+              <li><a href="#">Trust & Safety</a></li>
+              <li><a href="#">Global Anti-Corruption Policy</a></li>
+            </ul>
+            <div class="see-all-apps">
+              <h3 class="footer-heading">See All Apps</h3>
+              <a href="#" class="download-button">DOWNLOAD NOW</a>
+            </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+          </div>
+          <p class="copyright-text">© 2025. All rights reserved</p>
+        </div>
+    </footer>
+  </body>
+</html>
