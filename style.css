@@ -489,7 +489,8 @@ header {
         display: flex; 
     }
     #container img {
-        width: 80vw;
+        width: 85vw;
+        height: 300px;
         object-fit: cover;
     }
     #div2 {
